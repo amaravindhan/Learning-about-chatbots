@@ -1,0 +1,37 @@
+{
+  "id": "d9a4633e-e2aa-49f7-9f5b-e45b18f55f11",
+  "name": "First Indent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": true,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Hi, I\u0027m your HelloWorld chatbot. I am up and running",
+            "Hello I am your first bot",
+            "Hi this is you helloworld bot. How can I help you"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}
