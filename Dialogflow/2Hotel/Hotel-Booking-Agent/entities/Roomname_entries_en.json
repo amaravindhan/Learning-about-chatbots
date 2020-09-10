@@ -1,0 +1,27 @@
+[
+  {
+    "value": "suite",
+    "synonyms": [
+      "suite",
+      "special",
+      "luxury",
+      "vip"
+    ]
+  },
+  {
+    "value": "economy",
+    "synonyms": [
+      "economy",
+      "low cost",
+      "casual",
+      "budget"
+    ]
+  },
+  {
+    "value": "standard",
+    "synonyms": [
+      "standard",
+      "premium"
+    ]
+  }
+]
