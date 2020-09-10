@@ -1,0 +1,39 @@
+{
+  "id": "cf236d5a-d4f8-4357-b1b7-6ce5bc7e5ae6",
+  "parentId": "9ff3203d-0fb5-474d-a028-469a35541d72",
+  "rootParentId": "9ff3203d-0fb5-474d-a028-469a35541d72",
+  "name": "Show all bookings - yes",
+  "auto": true,
+  "contexts": [
+    "Showallbookings-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "ShowAllBookings",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Something happened in show all bookings webhook"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

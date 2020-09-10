@@ -1,0 +1,93 @@
+[
+  {
+    "id": "d3f7c527-d5a7-4af0-8d4e-a2ac95d08cd3",
+    "data": [
+      {
+        "text": "How many bookings I have",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "52a4aa25-f8ba-4e09-9131-fb2f43fefff7",
+    "data": [
+      {
+        "text": "my bookings",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "fa857910-cdfb-4078-8007-5d89ef5f7842",
+    "data": [
+      {
+        "text": "show all bookings",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "d8d0b344-61e2-4efa-8e31-5b64242d74d8",
+    "data": [
+      {
+        "text": "all hotel bookings",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "356aae3c-5f50-4135-a542-a1055ab132fc",
+    "data": [
+      {
+        "text": "all room bookings",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "a034c422-531f-4d4b-a8f4-141877908674",
+    "data": [
+      {
+        "text": "all bookings",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "bfb7d070-a114-43a1-9eb0-2a85fb13eb80",
+    "data": [
+      {
+        "text": "Show me my bookings",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

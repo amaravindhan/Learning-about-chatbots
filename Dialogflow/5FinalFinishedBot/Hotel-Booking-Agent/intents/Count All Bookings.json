@@ -1,0 +1,44 @@
+{
+  "id": "9ff3203d-0fb5-474d-a028-469a35541d72",
+  "name": "Count All Bookings",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "CountAllBookings",
+      "affectedContexts": [
+        {
+          "name": "Showallbookings-followup",
+          "lifespan": 2
+        },
+        {
+          "name": "CountAllBookings-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Something went wrong in connection with fulfilment."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

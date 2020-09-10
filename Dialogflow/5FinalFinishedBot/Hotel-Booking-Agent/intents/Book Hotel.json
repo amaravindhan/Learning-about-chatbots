@@ -1,0 +1,152 @@
+{
+  "id": "4f804cc6-3c2c-4d0d-afbd-ad1a18025701",
+  "name": "Book Hotel",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "BookHotel",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "2ddd46a0-5c4d-483c-9d3d-50d2dce38181",
+          "name": "customerName",
+          "required": true,
+          "dataType": "@sys.given-name",
+          "value": "$customerName",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "What is your name?"
+            },
+            {
+              "lang": "en",
+              "value": "Let me know your name? Please"
+            },
+            {
+              "lang": "en",
+              "value": "Your good name, Please"
+            },
+            {
+              "lang": "en",
+              "value": "Please tell me your name?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "67bd960a-2d24-41f7-920a-d89855c401af",
+          "name": "persons",
+          "required": true,
+          "dataType": "@sys.number",
+          "value": "$persons",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Book room for how many persons?"
+            },
+            {
+              "lang": "en",
+              "value": "For how many people you want to book the hotel?"
+            },
+            {
+              "lang": "en",
+              "value": "For how many people you want to book the room?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "29104f4b-2c62-4697-afed-8bc9b26b70d6",
+          "name": "customerEmail",
+          "required": true,
+          "dataType": "@sys.email",
+          "value": "$customerEmail",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Please tell me your email for contact further"
+            },
+            {
+              "lang": "en",
+              "value": "Let me know your email address?"
+            },
+            {
+              "lang": "en",
+              "value": "Could you please tell me your email for sending the booking details?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "ba34e9c0-2e75-433f-a977-b6dc95f5d95f",
+          "name": "roomType",
+          "required": true,
+          "dataType": "@Roomname",
+          "value": "$roomType",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "What type of room would you like to book, we have economy, premium and luxury?"
+            },
+            {
+              "lang": "en",
+              "value": "Please select room type from economy, premium and luxury?"
+            },
+            {
+              "lang": "en",
+              "value": "Could you please select the room type from budget, standard, vip?"
+            },
+            {
+              "lang": "en",
+              "value": "Could you please select the room type from economy, premium, suite?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Something went wrong!"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

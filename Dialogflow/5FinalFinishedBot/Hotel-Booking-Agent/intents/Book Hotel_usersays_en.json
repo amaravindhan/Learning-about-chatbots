@@ -1,0 +1,174 @@
+[
+  {
+    "id": "b340f5af-88e9-4008-94e2-75e5af72b5fc",
+    "data": [
+      {
+        "text": "I would like to book a ",
+        "userDefined": false
+      },
+      {
+        "text": "suite",
+        "meta": "@Roomname",
+        "alias": "roomType",
+        "userDefined": true
+      },
+      {
+        "text": " room",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "f332f8d1-f5c4-4ecc-9bf7-83795e69be35",
+    "data": [
+      {
+        "text": "my email is ",
+        "userDefined": false
+      },
+      {
+        "text": "test@gmail.com",
+        "meta": "@sys.email",
+        "alias": "customerEmail",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "3101e108-9ca8-4913-98c5-6c691547c836",
+    "data": [
+      {
+        "text": "I need room for ",
+        "userDefined": false
+      },
+      {
+        "text": "3",
+        "meta": "@sys.number",
+        "alias": "persons",
+        "userDefined": false
+      },
+      {
+        "text": " persons",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "446b534d-8f3c-4a69-9c7b-62ac2d3319ed",
+    "data": [
+      {
+        "text": "Book hotel for ",
+        "userDefined": false
+      },
+      {
+        "text": "3",
+        "meta": "@sys.number",
+        "alias": "persons",
+        "userDefined": false
+      },
+      {
+        "text": " persons",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "d05af869-55f5-4f42-8f91-8599364e2fd3",
+    "data": [
+      {
+        "text": "My name is ",
+        "userDefined": false
+      },
+      {
+        "text": "aravindhan",
+        "meta": "@sys.given-name",
+        "alias": "customerName",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "2a7d440e-5ff4-4ec5-9639-1ab1ce613e54",
+    "data": [
+      {
+        "text": "I like to get room",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "a7dee1bd-8c92-4009-83c4-9517fc913c1e",
+    "data": [
+      {
+        "text": "I would like to reserve a hotel",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "ac5979f0-b17e-49d8-8946-8c3f1872fd43",
+    "data": [
+      {
+        "text": "I need room",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "d0b605ae-9e6d-4136-9593-ce3c5a1492f2",
+    "data": [
+      {
+        "text": "I want to book a room",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  },
+  {
+    "id": "f79f77db-dfb7-45a0-9e57-c198e2e27c05",
+    "data": [
+      {
+        "text": "I need to book a room",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "en",
+    "updated": 0
+  }
+]

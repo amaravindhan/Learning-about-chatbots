@@ -1,0 +1,42 @@
+{
+  "id": "8f47623c-def3-464f-ae9e-2715fe34d1a4",
+  "parentId": "9ff3203d-0fb5-474d-a028-469a35541d72",
+  "rootParentId": "9ff3203d-0fb5-474d-a028-469a35541d72",
+  "name": "Count All Bookings - no",
+  "auto": true,
+  "contexts": [
+    "Showallbookings-followup",
+    "CountAllBookings-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "CountAllBookings.CountAllBookings-no",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Thank you, Have a nice day!",
+            "Would I need to do another task?",
+            "How can I help you?"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

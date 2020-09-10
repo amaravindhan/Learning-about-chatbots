@@ -1,0 +1,42 @@
+{
+  "id": "d6672308-d739-41b9-b63e-923abe7449f1",
+  "name": "Default Welcome Intent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.welcome",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "en",
+          "speech": [
+            "Hi! How are you doing?. I am a Hotel Booking Bot, I can book room and show all bookings",
+            "Hello! I am a Hotel Booking Bot, you can ask me to reserve a room and check all your reservations. How can I help you?",
+            "Good day! What can I do for you today? Book new hotel or show all your hotel bookings?",
+            "Greetings! I am a Hotel Booking Bot, I can book room and show all bookings. How can I assist?"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "WELCOME"
+    }
+  ],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}
