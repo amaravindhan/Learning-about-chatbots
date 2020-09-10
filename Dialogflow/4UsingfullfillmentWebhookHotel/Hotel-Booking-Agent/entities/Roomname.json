@@ -1,0 +1,9 @@
+{
+  "id": "708e3c81-6da7-43da-99bb-f234d5d5cf39",
+  "name": "Roomname",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": true
+}

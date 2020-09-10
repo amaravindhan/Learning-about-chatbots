@@ -9,20 +9,60 @@ var firestore = admin.firestore();
 //
 exports.bookhotel = functions.https.onRequest((request, response) => {
     
-    let params = request.body.queryResult.parameters
-    console.log("request.body.result.parameters: ", params)
+    let action = request.body.queryResult.action;
+    let params = {};
 
-    firestore.collection("orders").add(params)
-        .then(() => {
-            return response.send({
-                "fulfillmentText": `${params.customerName} your hotel booking request for ${params.roomType}
-                                     room is forwarded for ${params.persons} persons, we will contact you on 
-                                     ${params.customerEmail} soon.`,
-            });
-        })
-        .catch((e) =>{
+    switch (action) {
+        case "BookHotel":
+            params = request.body.queryResult.parameters;
+            console.log("request.body.result.parameters: ", params)
+
+            firestore.collection("orders").add(params)
+                .then(() => {
+                    return response.send({
+                        "fulfillmentText": `${params.customerName} your hotel booking request for ${params.roomType}
+                                            room is forwarded for ${params.persons} persons, we will contact you on 
+                                            ${params.customerEmail} soon.`,
+                    });
+                })
+                .catch((e) =>{
+                    console.log('Error in writing bookings into DB', e);
+                    response.send({
+                        "fulfillmentText": "Something went wrong when writing on database."
+                    });
+                });
+            break;
+        
+        case "ShowAllBookings":
+            firestore.collection("orders").get()
+                .then((queryResult) => {
+                    var orders = [];
+                    queryResult.forEach((doc) => {orders.push(doc.data()) });
+
+                    var orderDetail = `You have ${orders.length} orders: \n`;
+
+                    orders.forEach((eachOrder, index) => {
+                        orderDetail += `${index + 1}. ${eachOrder.roomType} room for 
+                                        ${eachOrder.persons} persons, ordered by ${eachOrder.customerName}
+                                         and contact email is ${eachOrder.customerEmail} \n`
+                    })
+
+                    return response.send({
+                        "fulfillmentText": orderDetail
+                    })
+
+                })
+                .catch((err) => {
+                    console.log('Error in getting bookings from DB', err);
+                    response.send({
+                        "fulfillmentText": "Something went wrong when reading from database."
+                    });
+                })
+            break;
+    
+        default:
             response.send({
-                "fulfillmentText": "Something went wrong when writing on database."
+                "fulfillmentText": "No action matched in webhook."
             });
-        });
+    }
 });
