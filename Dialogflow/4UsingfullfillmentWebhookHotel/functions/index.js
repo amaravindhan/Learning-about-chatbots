@@ -33,18 +33,37 @@ exports.bookhotel = functions.https.onRequest((request, response) => {
                 });
             break;
         
+        case "CountAllBookings":
+            firestore.collection("orders").get()
+                .then((queryResult) => {
+                    var orders = [];
+                    queryResult.forEach((doc) => {orders.push(doc.data()) });
+
+                    return response.send({
+                        "fulfillmentText": `You have ${orders.length} orders, would you like to see them?`
+                    })
+
+                })
+                .catch((err) => {
+                    console.log('Error in getting count of bookings from DB', err);
+                    response.send({
+                        "fulfillmentText": "Something went wrong when reading count from database."
+                    });
+                })
+            break;
+        
         case "ShowAllBookings":
             firestore.collection("orders").get()
                 .then((queryResult) => {
                     var orders = [];
                     queryResult.forEach((doc) => {orders.push(doc.data()) });
 
-                    var orderDetail = `You have ${orders.length} orders: \n`;
+                    var orderDetail = `Here are your orders. \n`;
 
                     orders.forEach((eachOrder, index) => {
                         orderDetail += `${index + 1}. ${eachOrder.roomType} room for 
                                         ${eachOrder.persons} persons, ordered by ${eachOrder.customerName}
-                                         and contact email is ${eachOrder.customerEmail} \n`
+                                            and contact email is ${eachOrder.customerEmail} \n`
                     })
 
                     return response.send({
