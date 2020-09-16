@@ -1,0 +1,12 @@
+Assistant Name: Flower Shop Chatbot
+Assistant ID  : 4b0c74a4-ea19-453a-9149-b38174d8901f
+Assistant URL : https://api.eu-gb.assistant.watson.cloud.ibm.com/instances/38bd2948-55eb-417e-bfe0-747a9c432cc0/v2/assistants/4b0c74a4-ea19-453a-9149-b38174d8901f/sessions
+Api Key       : dW1-P4PIRn01zGUFz6UlfqIOEgSMxGakXyPiv6KaeQhF
+
+Preview Link  : https://web-chat.global.assistant.watson.cloud.ibm.com/preview.html?region=eu-gb&integrationID=2fcbe4dd-39d1-4dfd-8dc4-a78ff08339c4&serviceInstanceID=38bd2948-55eb-417e-bfe0-747a9c432cc0
+
+Word Press Integration:
+Site Name: https://aravindhansundram.intelaedu.com/
+site UserName: aravindhansundram
+site Password: 28DfyOKiHJnd
+Dashboard URL: https://aravindhansundram.intelaedu.com/wp-admin/

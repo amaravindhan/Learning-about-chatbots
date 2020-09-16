@@ -1,0 +1,18 @@
+1. Avoid YES and NO answers.
+eg: customer: Is delivery free? (it works for this question)
+    Bot:      Yes, it is.    
+But ... 
+    customer: Do I have to pay for delivery? ( There it goes wrong)
+    Bot:      Yes, it is.
+
+correct response will be....
+    Bot:      Deliveries are free.
+
+2. Incorporate part of the user's question in your response.
+eg: customer: Do you have store in Seattle?
+    Bot     : We have stores in Toronto, Montreal, Calgary, and Vancouver.
+  - Its an okay response but we can improve it by incorporating a bit of empathy and information provided by the user in our response.
+Like Bot    : Unfortunately, we don't have a store in Seattle. To date, we have stores in Toronto, Montreal, Calgary, and Vancouver.
+
+3. Provide succinct and accurate answers.( in short with one or two short lines).
+

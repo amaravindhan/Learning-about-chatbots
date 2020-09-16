@@ -63,7 +63,7 @@ exports.bookhotel = functions.https.onRequest((request, response) => {
                     orders.forEach((eachOrder, index) => {
                         orderDetail += `${index + 1}. ${eachOrder.roomType} room for 
                                         ${eachOrder.persons} persons, ordered by ${eachOrder.customerName}
-                                            and contact email is ${eachOrder.customerEmail} \n`
+                                            and contact email is ${eachOrder.customerEmail}. \n`
                     })
 
                     return response.send({
